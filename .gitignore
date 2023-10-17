@@ -11,6 +11,7 @@ gi*/
 *_tmp/
 *_INCLASS/
 tmp/
+gdms0000*/
 
 *.ipynb_checkpoints/
 *checkpoint.ipynb
