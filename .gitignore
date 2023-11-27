@@ -26,6 +26,7 @@ data/original/NRW_DTM_Xanten_EPSG_25832_XYZ/*
 
 data/original/OpenHygrisC_gw-messstellen-messwerte_EPSG25832_CSV/
 
+data*
 
 data/derived/NRW_DTM_Hees_EPSG_25832_GeoTiff/*
 
