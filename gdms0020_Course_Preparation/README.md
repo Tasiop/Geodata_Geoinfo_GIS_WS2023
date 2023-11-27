@@ -22,7 +22,6 @@ We will use several special Python packages to process geodata and to interact w
 * rasterio
 * sqlalchemy 
 * psycopg2
-* ftplib
 * ipython-sql # SQL magic function
 
 ## git 
