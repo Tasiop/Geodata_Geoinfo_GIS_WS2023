@@ -1,6 +1,6 @@
 # Installation of GDAL and GEOPANDAS (PYPROJ) in a Clean Conda Environment
 
-he attempt to install gdal by calling `conda install -c conda-forge gdal` in the base environment of conda leads often to conflicts and is refused. But if this installation works for you do not need to create another environment and coud stop reading.
+The attempt to install gdal by calling `conda install -c conda-forge gdal` in the base environment of conda leads often to conflicts and is refused. But if this installation works for you do not need to create another environment and coud stop reading.
 
 Environments are very useful and highly recommended anyway to have full control of kernel and package versions. Some software development projects require the combination of packages with dedicated version numbers. A virtual environment provides a fully controlled and independent sandbox of installed components.
 
@@ -12,7 +12,7 @@ https://kapeli.com/cheat_sheets/Conda.docset/Contents/Resources/Documents/index
 Some more helpful information on environments in Jupyter:<br>
 http://nero-docs.stanford.edu/jupyter-customEnv.html
 
-## Create a New Conda Environment
+## Create a New Conda Environment with the Packages needed
 
 On Windows: Open an Anaconda Powershell Prompt (Start -> Anaconda3 -> Anaconda Powershell Prompt). On other operating systems open a terminal. On the command line prompt you should see an indicator which Python environment is currently active, e.g. `(base) PS C:\Users\me`
 
@@ -38,11 +38,20 @@ conda create --name geo python=3.8 # for the specific version 3.8 or use python=
 # activate the new enviroment
 conda activate geo # IMPORTANT!!!
 
-# Install JupyterLab meta-package
-conda install jupyterlab
+# Install geopandas to handle spatial information and create geometries
+conda install -y -c conda-forge geopandas
 
-# Install geopandas-metapackage (installation of pandas, numpy etc.)
-conda install geopandas 
+# Install jupysql to handle database connections
+conda install -y jupysql -c conda-forge
+
+# Install Jupyter lab to use as programming IDE
+conda install -y -c conda-forge jupyterlab
+
+# Install wget to grab files from the internet
+conda install -y -c conda-forge python-wget
+
+# Install seaborn for more plotting options and tqdm to create progress bars
+conda install -y seaborn tqdm
 
 # numpy, pandas, gdal, etc. are installed in the scope of these meta-packages 
 ```
