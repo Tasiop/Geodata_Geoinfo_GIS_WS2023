@@ -28,6 +28,8 @@ data/original/OpenHygrisC_gw-messstellen-messwerte_EPSG25832_CSV/
 
 data*
 
+*/data/
+
 data/derived/NRW_DTM_Hees_EPSG_25832_GeoTiff/*
 
 !data/derived/NRW_DTM_Hees_EPSG_25832_GeoTiff/*merged.tif
