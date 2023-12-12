@@ -3,5 +3,3 @@ You can find below a description of the lectures of this winter semester for the
 
 ### Lecture 1
 - gdms0020_Course_Preparation 
-
-
